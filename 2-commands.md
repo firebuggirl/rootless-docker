@@ -23,6 +23,8 @@ https://www.katacoda.com/courses/docker/rootless
 
     ` useradd -m -d /home/lowprivuser -p $(openssl passwd -1 password) lowprivuser `
 
+    - NOTE: create different user w/ different name that is not pushed to Github => save in password manager &/or variables.env....
+
   - switch to running as this new, low privileged user:
 
     ` sudo su lowprivuser `
