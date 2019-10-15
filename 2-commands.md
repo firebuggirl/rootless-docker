@@ -19,6 +19,10 @@ https://www.katacoda.com/courses/docker/rootless
 
   - environment is currently running Ubuntu 16.04 with the user logged in as root 
 
+  - on my machine run:
+
+      ` docker run -t ubuntu:19.04 `
+
   - `create a new user` w/out these root privileges => create new user named `lowprivuser` w/ the default permissions:
 
     ` useradd -m -d /home/lowprivuser -p $(openssl passwd -1 password) lowprivuser `
@@ -98,3 +102,6 @@ https://www.katacoda.com/courses/docker/rootless
 
 
 ### now running Docker Containers w/out requiring any additional permissions === better security 
+
+
+` curl -sSL https://get.docker.com/rootless | sh `//error => Rootless Docker cannot be installed on Darwin
